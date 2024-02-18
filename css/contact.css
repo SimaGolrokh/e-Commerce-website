@@ -1,0 +1,231 @@
+@import url(home.css);
+@import url(footer.css);
+#page-header{
+    background-image: url('../img/about.png');
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+#page-header h1,
+#page-header p {
+    color: #fff;
+    font-size: 30px;
+}
+#contact , #form form{
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 50px;
+}
+#contact .details{
+    width: 40%;
+}
+#contact .details span,#form form span{
+    font-size: 12px;
+
+}
+#contact .details h2,
+#form form h2{
+    font-size: 26px;
+    line-height: 35px;
+     padding: 20px 0;
+}
+#contact .details h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+#contact .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+#contact .details li i{
+    font-size: 14px;
+    padding-right: 22px;
+}
+#contact .details li p{
+    margin: 0;
+    font-size: 14px;
+}
+
+#contact .map{
+    width: 55%;
+    height: 400px;
+}
+#contact .map iframe{
+    width: 100%;
+    height: 100%;
+}
+#form{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #efefef;
+}
+#form form{
+width: 65%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+#form form input ,
+#form form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #efefef;
+}
+#form form button{
+    background-color: #383838;
+    color: #efefef;
+    font-size: 15px;
+}
+
+@media (max-width:799px) {
+    
+    
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top:0;
+        left: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #efefef;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+
+    }
+    #navbar.active{
+        left: 0px;
+    }
+    
+    
+    
+    #navbar li {
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #mobile i{
+        color: #383838;
+        font-size: 24px;
+        padding-left:20px ;
+    }
+    
+    #hero {
+        
+        height: 50vh;
+        padding: 0 80px;
+       background-position: top 50% right 30% ;
+       font-size: 15px;
+       font-weight:25px;
+       padding: 0 20px ;
+
+    }
+   #form{
+    padding: 40px;
+   }
+   #form form{
+    width: 50%;
+   }
+} 
+
+@media (max-width:477px) {
+    .nav {
+        padding: 10px 30px;
+       
+    }
+    .brand-logo {
+        height: 40px;
+    }
+
+    #mobile i {
+        font-size: 15px;
+        
+    }
+    #navbar{
+        right: -300px;
+
+    }
+ 
+   
+    .nav-items a {
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    
+    #navbar li {
+        margin-bottom: 15px;
+    }
+
+    #hero {
+        
+        height: 50vh;
+        padding: 0 20px;
+       background-position:55% ;
+      
+       
+    
+    }
+    .hero-text{
+        font-size: 10px;
+        font-weight:10px;
+        
+    }
+
+    #contact {
+        flex-direction: column;
+    }
+    #contact .details{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #contact .map{
+        width: 100%;
+    }
+    #form{
+        margin: 10px;
+        padding: 30px 10px;
+        flex-wrap: wrap;
+    }
+    #form form{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    footer {
+        
+        padding: 10px 5px;
+       
+    }
+    .footer-content .logo {
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .col {
+        width: 150px;
+        
+        grid-gap: 10px;
+       
+    
+    }
+    .footer-ul-container {
+        width: 60%;
+       
+    }
+}

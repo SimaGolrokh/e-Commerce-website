@@ -1,0 +1,93 @@
+footer{
+    position: relative;
+    width: 100%;
+    padding: 20px 10vw;
+    padding-bottom: 80px;
+    background: #313030;
+}
+
+
+.footer-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-content .logo{
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.footer-ul-container{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.col{
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    list-style: none;
+}
+
+.col-title{
+    grid-column: span 1;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.col .footer-link{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-link:hover{
+    color: #fffafa;
+}
+.footer-title, .info{
+    color: rgba(255, 255, 255, 0.75);
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+
+.footer-title{
+    margin-top: 10px;
+
+    color: #fff;
+}
+
+footer .follow {
+    margin-top: 20px ;
+}
+footer .follow h4 {
+    margin-top: 20px ;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15px;
+}
+footer .follow i {
+    color: rgba(255, 255, 255, 0.75);
+   padding-right: 4px;
+   cursor: pointer;
+}
+footer .follow i:hover {
+    color: #fffafa ;
+ }
+
+
+.footer-credit{
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.2);
+}
